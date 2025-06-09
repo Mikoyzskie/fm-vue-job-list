@@ -7,6 +7,10 @@ import JobCard from './components/JobCard.vue'
   <HeaderBanner />
   <div class="container">
     <JobCard />
+    <JobCard />
+    <JobCard />
+    <JobCard />
+    <JobCard />
   </div>
 </template>
 
@@ -14,6 +18,9 @@ import JobCard from './components/JobCard.vue'
 .container {
   width: 100%;
   max-width: 1158px;
-  padding: 32px 24px 34px 24px;
+  padding: 56px 24px 34px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 </style>

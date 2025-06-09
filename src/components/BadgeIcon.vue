@@ -15,9 +15,8 @@ defineProps<{
   font-size: 14px;
   font-weight: 700;
   border-radius: 50px;
-  padding: 6px 8px;
+  padding: 7px 8px 3px;
   color: var(--white);
-  line-height: 14px;
   letter-spacing: -0.11px;
 }
 

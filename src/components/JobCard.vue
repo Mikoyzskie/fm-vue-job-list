@@ -5,6 +5,7 @@ import FilterButton from './FilterButton.vue'
 
 <template>
   <div class="item-container">
+    <img src="../assets/insure.svg" class="company-logo" />
     <div class="wrapper">
       <div class="details">
         <div class="details-header">
@@ -24,8 +25,12 @@ import FilterButton from './FilterButton.vue'
         </div>
       </div>
       <div class="separator"></div>
-      <div>
+      <div class="filter-container">
         <FilterButton text="Frontend" />
+        <FilterButton text="Senior" />
+        <FilterButton text="HTML" />
+        <FilterButton text="CSS" />
+        <FilterButton text="Javascript" />
       </div>
     </div>
   </div>
@@ -35,7 +40,16 @@ import FilterButton from './FilterButton.vue'
 .item-container {
   background: var(--white);
   border-radius: 5px;
-  filter: drop-shadow(0 4px 4px rgba(91, 164, 164, 0.25));
+  filter: drop-shadow(0 10px 10px rgba(91, 164, 164, 0.25));
+  position: relative;
+}
+
+.company-logo {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  left: 24px;
+  top: -24px;
 }
 
 .details-header {
@@ -98,5 +112,14 @@ import FilterButton from './FilterButton.vue'
   height: 1px;
   background-color: hsl(180, 10%, 74%);
   width: 100%;
+  margin-top: 16px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
 }
 </style>
